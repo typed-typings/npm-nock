@@ -24,7 +24,7 @@ declare namespace nock {
 
   export interface Options {
     allowUnmocked?: boolean;
-    reqheaders:Object
+    reqheaders?: Object;
   }
 
   export interface RecorderOptions {
