@@ -117,6 +117,7 @@ declare namespace nock {
     query (acceptAnyParams: boolean): Scope;
 
     reply (statusCode: number, body?: string | Object, headers?: Object): Scope;
+    reply (fn: (uri: string, requestBody: string | Object, cb: (err: Error, response: any[]) => void) => void | any[]): Scope;
     replyWithFile (statusCode: number, fileName: string): Scope;
     replyWithError (error: string | Object): Scope;
 
